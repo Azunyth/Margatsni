@@ -40,9 +40,12 @@ div.timeline {
     width: 100%;
 }
 
+/************************/
+/*       HEADER         */
+/************************/
+
 article.post {
     width: 100%;
-    padding: 14px 20px;
     border: 1px solid #e6e6e6;
     border-radius: 3px;
 }
@@ -51,6 +54,7 @@ div.post-header {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 14px 20px;
 }
 
 a.post-header-time {
@@ -83,4 +87,67 @@ div.post-header-informations a {
     text-decoration: none;
     font-size: 15px;
     line-height: 18px;
+}
+
+/************************/
+/*        IMAGE         */
+/************************/
+
+div.post-picture {
+    width: 100%;
+}
+
+div.post-picture img {
+    max-width: 100%;
+}
+
+/************************/
+/*     INFORMATIONS     */
+/************************/
+
+div.post-informations {
+    width: 100%;
+    padding: 20px 24px;
+}
+
+div.post-informations ul {
+    list-style-type: none;
+    -webkit-padding-start: 0px;
+}
+
+div.post-informations ul li {
+    margin-bottom: 7px;
+}
+
+div.post-informations ul li:last-child {
+    margin-bottom: 0;
+}
+
+p.post-informations-likes {
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+div.post-informations span.author a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+}
+
+div.post-informations span.comment {
+    word-wrap: break-word;
+}
+
+div.post-informations button.view-comments {
+    border: none;
+    background: #fff;
+    padding: 0;
+    color: #999;
+    font-weight: 500;
+}
+
+div.post-informations-comment {
+    margin-top: 20px;
+    border-top: 1px solid #efefef;
+    min-height: 68px;
 }
