@@ -1,6 +1,18 @@
+/************************/
+/*       GLOBAL         */
+/************************/
+
+body {
+    display: flex;
+}
+
 p {
     margin: 0;
 }
+
+/************************/
+/*       NAVBAR         */
+/************************/
 
 .navbar-default {
     background: white;
@@ -28,9 +40,9 @@ p {
     margin-top: 10px;
 }
 
-body {
-    display: flex;
-}
+/************************/
+/*       TIMELINE       */
+/************************/
 
 div.timeline {
     padding-top: 120px;
@@ -90,7 +102,7 @@ div.post-header-informations a {
 }
 
 /************************/
-/*        IMAGE         */
+/*       PICTURE        */
 /************************/
 
 div.post-picture {
@@ -101,13 +113,19 @@ div.post-picture img {
     max-width: 100%;
 }
 
-/************************/
-/*     INFORMATIONS     */
-/************************/
+/************************************/
+/*   INFORMATIONS - VIEW COMMENTS   */
+/************************************/
 
 div.post-informations {
     width: 100%;
-    padding: 20px 24px;
+    padding: 0px 24px;
+}
+
+p.post-informations-likes {
+    margin-bottom: 7px;
+    font-weight: bold;
+    margin-top: 20px;
 }
 
 div.post-informations ul {
@@ -121,11 +139,6 @@ div.post-informations ul li {
 
 div.post-informations ul li:last-child {
     margin-bottom: 0;
-}
-
-p.post-informations-likes {
-    margin-bottom: 7px;
-    font-weight: bold;
 }
 
 div.post-informations span.author a {
@@ -146,8 +159,59 @@ div.post-informations button.view-comments {
     font-weight: 500;
 }
 
+/************************************/
+/*    INFORMATIONS - ADD COMMENTS   */
+/************************************/
+
 div.post-informations-comment {
     margin-top: 20px;
     border-top: 1px solid #efefef;
     min-height: 68px;
+    display: flex;
+}
+
+div.post-informations-comment > div {
+    align-self: center;
+
+}
+
+div.post-informations-comment > div:first-child {
+    padding: 8px;
+    margin-right: 3px;
+    height: 40px;
+}
+
+div.post-informations-comment > div:last-child {
+    height: 24px;
+    margin-left: 3px;
+}
+
+a.like-post, a.option-post {
+    padding: 0;
+    border: none;
+    background: white;
+    text-decoration: none;
+    font-size: 24px;
+    color: #dbdbdb;
+}
+
+div.post-informations-comment > form {
+    flex-grow: 1;
+    align-self: center;
+}
+
+div.post-informations-comment > form input {
+    border: none;
+    color: #262626;
+    outline: none;
+    width: 100%;
+    height: 20px;
+}
+
+div.post-informations-comment > form input::-moz-placeholder,
+div.post-informations-comment > form input:-moz-placeholder,
+div.post-informations-comment > form input:-ms-input-placeholder,
+div.post-informations-comment > form input::-webkit-input-placeholder {
+    font-size: 20px;
+    line-height: 3;
 }
