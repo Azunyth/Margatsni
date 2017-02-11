@@ -60,6 +60,7 @@ article.post {
     width: 100%;
     border: 1px solid #e6e6e6;
     border-radius: 3px;
+    margin-bottom: 60px;
 }
 
 div.post-header {
@@ -213,5 +214,4 @@ div.post-informations-comment > form input:-moz-placeholder,
 div.post-informations-comment > form input:-ms-input-placeholder,
 div.post-informations-comment > form input::-webkit-input-placeholder {
     font-size: 20px;
-    line-height: 3;
 }
