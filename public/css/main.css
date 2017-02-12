@@ -108,6 +108,16 @@ div.post-header-informations a {
 
 div.post-picture {
     width: 100%;
+    position: relative;
+}
+
+div.post-picture .like-animation {
+    position: absolute;
+    color: #fff;
+    opacity: 0;
+    font-size: 80px;
+    top: calc(50% - 40px);
+    left: calc(50% - 40px);
 }
 
 div.post-picture img {
@@ -207,6 +217,10 @@ div.post-informations-comment > form input {
     outline: none;
     width: 100%;
     height: 20px;
+}
+
+div.post-informations-comment span.glyphicon-heart {
+    color: red;
 }
 
 div.post-informations-comment > form input::-moz-placeholder,
