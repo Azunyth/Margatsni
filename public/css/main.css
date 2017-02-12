@@ -41,15 +41,54 @@ p {
 }
 
 /************************/
-/*       TIMELINE       */
+/*    MAIN CONTAINER    */
 /************************/
 
-div.timeline {
+div.main-container {
+    flex-grow: 1;
+    width: 100%;
+    max-width: 810px;
     padding-top: 120px;
     margin: 0 auto;
-    flex-grow: 1;
+    display: flex;
+}
+
+section.timeline {
     max-width: 600px;
+    flex-grow: 1;
+}
+
+section#profil {
+    max-width: 200px;
+    margin-right: 10px;
+}
+
+/************************/
+/*       PROFIL         */
+/************************/
+
+article.profil-content {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+div.profil-picture {
+    max-width: 200px;
+    max-height: 200px;
+    overflow: hidden;
+}
+
+div.profil-picture img {
     width: 100%;
+}
+
+article.profil-content div.profil-bio {
+    padding: 5px 3px;
+}
+
+article.profil-content div.profil-bio > p > span {
+    font-weight: bold;
 }
 
 /************************/
